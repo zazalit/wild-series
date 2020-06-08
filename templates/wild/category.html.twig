@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for series in ListOfSeries %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ series.id }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ series.title }}</h6>
+                <p class="card-text">{{ series.summary }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
